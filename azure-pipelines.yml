@@ -15,7 +15,7 @@ steps:
     dockerVersion: '17.09.0-ce'
 - task: NodeTool@0
   inputs:
-    versionSpec: '10.x'
+    versionSpec: '14.x'
   displayName: 'Install Node.js'
 
 - script: |
@@ -33,5 +33,5 @@ steps:
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
-    artifact: 'Artifact'
+    artifact: 'ArtifactAngular'
     publishLocation: 'pipeline'
