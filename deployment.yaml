@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: myangular-app-service
-        image: chan29/angularfrontend:v1
+        image: chan29/angularfrontend:v2
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 80
