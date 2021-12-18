@@ -9,7 +9,7 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
   //readonly
-  baseURL = 'http://localhost:30002/api/users' 
+  baseURL = 'http://20.193.29.122:8081/api/users' 
   formData: Users = new Users();
   listUsers: Users[];
 
