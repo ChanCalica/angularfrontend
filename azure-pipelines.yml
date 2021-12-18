@@ -29,7 +29,7 @@ steps:
     repository: 'chan29 / angularfrontend'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
-    tags: v1
+    tags: v2
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'
