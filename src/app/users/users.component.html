@@ -1,0 +1,59 @@
+
+
+
+<div class="jumbotron py-3">
+    <h1 class="display-4 text-center">REGISTRATION FORM</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-users-form></app-users-form>
+    </div>
+    <div class="col-md-6">
+        <table class="table">
+
+            <thead class="thead">
+
+                <tr>
+                    <th class="Table-Name">
+                        Name
+                    </th>
+                    <th></th>
+                </tr>
+
+
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let d of service.listUsers">
+                    <td (click) = "populateForm(d)">
+                        {{d.name}}
+                        
+                    </td>
+                    <td>
+                        
+                           
+                            
+                              
+                              <button mat-raised-button color="warn" (click)="onDelete(d.id)" ><i class="far fa-trash-alt fa-lg text-white" ></i></button>
+                              
+                            
+                          
+                        
+                        
+                    </td>
+
+                    
+
+                   
+                </tr>
+            </tbody>
+
+
+        </table>
+        
+    </div>
+</div>
+
+
+
